@@ -31,6 +31,7 @@ git submodule add git@github.com:mcrwfrd/hugo-frances-theme.git
 ```shell
 cd hugo-frances
 cp -pr ./themes/hugo-frances-theme/exampleSite/config.toml .
+cp -pr ./themes/hugo-frances-theme/{content,data} .
 ```
 
 config.toml
@@ -41,6 +42,22 @@ languageCode = "ja"
 title = "Hugo Frances"
 theme = "hugo-frances-theme"
 publishDir = "docs"
+...
+
+[[menu.main]]
+  name = "Blog"
+  url = "posts"
+  weight = 1
+
+[[menu.main]]
+  name = "Contact Us"
+  url = "contact"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "about/"
+  weight = 3
 ```
 
 > github pagesやnetlifyで使う場合はbaseURLのプロトコルはhttpsにすること
@@ -59,17 +76,23 @@ Github>Settings>Gighub Pages>Source>master branch/docs folder
 
 ### 投稿
 
-新規ポートフォリオ
+新規投稿
 
 ```shell
-hugo new blog/hello.md
-content/blog/hello.md created
+hugo new posts/hello.md
+content/posts/hello.md created
 ```
 
 編集
 
 ```shell
-vi content/blog/hello.md
+vi content/posts/hello.md
+```
+
+### ポートフォリオ
+
+```shell
+vi data/artworks.toml
 ```
 
 ## Link
