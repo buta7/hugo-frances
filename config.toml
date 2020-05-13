@@ -13,15 +13,18 @@ publishDir = "docs"
 
 [[menu.main]]
   name = "Blog"
-  url = "posts"
+  title = "News"
+  url = "/posts"
   weight = 1
 
 [[menu.main]]
-  name = "Contact Us"
-  url = "contact"
+  name = "Contact"
+  title = "Cotact Me"
+  url = "/contact"
   weight = 2
 
 [[menu.main]]
   name = "About"
-  url = "about/"
+  title = "About this site"
+  url = "/about"
   weight = 3

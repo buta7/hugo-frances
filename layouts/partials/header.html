@@ -10,7 +10,7 @@
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
         <a class="nav-item nav-link" href="{{ .URL }}" title="{{ .Title }}">
-          {{ .Name }}{{ .URL }}
+          {{ .Name }}
         </a>
       {{ end }}
     </div>
