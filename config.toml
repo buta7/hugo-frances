@@ -1,7 +1,9 @@
 # Site settings
-baseurl = "https://example.com"
-languageCode = "en-us"
-sectionPagesMenu = "main"
+baseURL = "https://higebobo.github.io/hugo-frances/"
+languageCode = "ja"
+title = "Hugo Frances"
+theme = "hugo-frances-theme"
+publishDir = "docs"
 
 [params]
 	name = "Frances Hodgkins"
