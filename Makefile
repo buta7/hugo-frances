@@ -25,7 +25,7 @@ run-without-draft: ## Run server without draft posts
 build: clean ## Build static html
 	@hugo
 
-deploy: ## Deploy on Github Pages
+deploy: clean ## Deploy on Github Pages
 	@sh deploy.sh
 
 clean: ## Clean old files
