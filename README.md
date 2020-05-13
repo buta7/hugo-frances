@@ -31,8 +31,14 @@ git submodule add git@github.com:mcrwfrd/hugo-frances-theme.git
 ```shell
 cd hugo-frances
 cp -pr ./themes/hugo-frances-theme/exampleSite/config.toml .
-cp -pr ./themes/hugo-frances-theme/{content,data} .
+cp -pr ./themes/hugo-frances-theme/{content,data,layouts} .
 ```
+
+layoutsのパスが絶対URLになっている箇所があるので修正
+
+* layouts/_default/baseof.html
+* layouts/partials/head.html
+* layouts/partials/foot.html
 
 config.toml
 
@@ -44,20 +50,6 @@ theme = "hugo-frances-theme"
 publishDir = "docs"
 ...
 
-[[menu.main]]
-  name = "Blog"
-  url = "posts"
-  weight = 1
-
-[[menu.main]]
-  name = "Contact Us"
-  url = "contact"
-  weight = 2
-
-[[menu.main]]
-  name = "About"
-  url = "about/"
-  weight = 3
 ```
 
 > github pagesやnetlifyで使う場合はbaseURLのプロトコルはhttpsにすること
