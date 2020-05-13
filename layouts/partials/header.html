@@ -9,7 +9,7 @@
     <div class="navbar-nav">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
-        <a class="nav-item nav-link" href="{{ .Site.BaseURL }}{{ .URL }}" title="{{ .Title }}">
+        <a class="nav-item nav-link" href="{{ .URL }}" title="{{ .Title }}">
           {{ .Name }}
         </a>
       {{ end }}
