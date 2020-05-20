@@ -14,8 +14,6 @@ ifneq ("$(wildcard ./.env)","")
   include ./.env
 endif
 
-PORT=1313
-
 run: ## Run server
 	@hugo server --bind="0.0.0.0" --baseUrl="${HOST}" --port=${PORT} --buildDrafts --watch
 

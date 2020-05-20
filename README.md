@@ -31,7 +31,7 @@ git submodule add git@github.com:mcrwfrd/hugo-frances-theme.git
 ```shell
 cd hugo-frances
 cp -pr ./themes/hugo-frances-theme/exampleSite/config.toml .
-cp -pr ./themes/hugo-frances-theme/{content,data,layouts} .
+cp -pr ./themes/hugo-frances-theme/{content,data,layouts,static} .
 ```
 
 layoutsのパスが絶対URLになっている箇所があるので修正
@@ -63,6 +63,14 @@ make deploy
 ```
 
 Github>Settings>Gighub Pages>Source>master branch/docs folder
+
+## 既存のレポジトリからクローンする場合
+
+```shell
+git clone git@github.com:higebobo/hugo-frances.git higebobo-frances
+cd higebobo-frances
+git submodule update --init --recursive
+```
 
 ## 使い方
 
