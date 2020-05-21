@@ -47,7 +47,6 @@ baseURL = "https://higebobo.github.io/hugo-frances/"
 languageCode = "ja"
 title = "Hugo Frances"
 theme = "hugo-frances-theme"
-#publishDir = "docs"
 ```
 
 > github pagesやnetlifyで使う場合はbaseURLのプロトコルはhttpsにすること
@@ -55,7 +54,7 @@ theme = "hugo-frances-theme"
 Githubレポジトリ作成後
 
 ```shell
-cp somplace/{Makefile,deploy.sh} .
+cp somplace/Makefile .
 git remote add origin git@github.com:higebobo/hugo-frances.git
 make deploy
 ```
