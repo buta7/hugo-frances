@@ -55,18 +55,17 @@ theme = "hugo-frances-theme"
 Githubレポジトリ作成後
 
 ```shell
-git remote add origin git@github.com:higebobo/hugo-frances.git
 cp somplace/{Makefile,deploy.sh} .
+git remote add origin git@github.com:higebobo/hugo-frances.git
 make deploy
 ```
-
-Github>Settings>Gighub Pages>Source>master branch/docs folder
 
 ## Github Actionsの利用
 
 * .github/workflows/gh-pages.yamlを作成
     * ソースはmasterブランチ
     * 出力はpublicフォルダの内容をgh-pagesブランチ
+        * Github>Settings>Gighub Pages>Source>gh-pages branch
 
 ## 既存のレポジトリからクローンする場合
 
