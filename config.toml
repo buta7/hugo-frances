@@ -3,7 +3,7 @@ baseURL = "https://higebobo.github.io/hugo-frances/"
 languageCode = "ja"
 title = "Hugo Frances"
 theme = "hugo-frances-theme"
-publishDir = "docs"
+#publishDir = "docs"
 
 [params]
 	name = "Frances Hodgkins"
